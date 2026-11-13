@@ -379,6 +379,7 @@ class AITerImpl(AttentionImpl):
             causal=self.causal,
             return_attn_probs=False,
             return_lse=False,
+            softmax_scale=self.softmax_scale,
             how_v3_bf16_cvt=AITER_BF16_CVT_MODE,
         )
 
